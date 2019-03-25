@@ -35,12 +35,12 @@ build/gr-arm64-linux: $(SOURCE)
 	CGO_ENABLED=0 GOOS=linux GOARCH=arm64 $(GOBUILD) -o $@
 
 release: build
-	github-release release -u fwartner -r replace -t "$(TAG)" -n "$(TAG)" --description "$(TAG)"
+	github-release release -u fwartner -r replace -t "1.0.0" -n "1.0.0" --description "1.0.0"
 	@for x in $(ALL); do \
 		echo "Uploading $$x" && \
 		github-release upload -u fwartner \
                               -r replace \
-                              -t $(TAG) \
+                              -t 1.0.0 \
                               -f "$$x" \
                               -n "$$(basename $$x)"; \
 	done
