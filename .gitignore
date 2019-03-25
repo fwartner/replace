@@ -1,0 +1,6 @@
+*.6
+/gr-*
+/goreplace
+/go-replace
+/build/
+/.idea
