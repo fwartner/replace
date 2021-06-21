@@ -124,3 +124,5 @@ REPLACE_VERSION=1.0.0 \
 | `wartnerio/replace:latest`  | Latest release, binary only                     |
 | `wartnerio/replace:master`  | Current development version in branch `master`  |
 | `wartnerio/replace:develop` | Current development version in branch `develop` |
+  
+ If you like what I am doing please consider [sponsor my work](https://github.com/sponsors/fwartner)!
