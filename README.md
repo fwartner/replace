@@ -3,6 +3,15 @@ Cli utility for replacing text in files, written in golang and compiled for usag
 
 Inspired by https://github.com/piranha/goreplace
 
+## Support me
+
+I invest a lot of resources into creating [best in class open source packages](https://wartner.io/open-source). You can support me by [buying one of my paid products](https://wartner.io/open-source/support-me).
+
+I highly appreciate you sending us a postcard from your hometown, mentioning which of my prpjects you are using. You'll find my address on [my contact page](https://wartner.me/contact). I publish all received postcards on [my virtual postcard wall](https://wartner.io/open-source/postcards).
+
+### Note
+This section is inspired by my friends at [Spatie](https://github.com/spatie).
+
 ## Features
 
 - Simple search&replace for terms specified as normal shell argument (for escaping only normal shell quotes needed)
@@ -68,7 +77,6 @@ Regular expression's back references can be activated with `--regex-backrefs` an
 | lineinfile | Replace line (if matched term is inside) with replacement. If no match is found in the whole file the line will be appended to the bottom of the file.         |
 | template   | Parse content as [golang template](https://golang.org/pkg/text/template/), arguments are available via `{{.Arg.Name}}` or environment vars via `{{.Env.Name}}` |
 
-
 ### Examples
 
 | Command                                                            | Description                                                                                      |
@@ -115,7 +123,6 @@ REPLACE_VERSION=1.0.0 \
 && wget -O /usr/local/bin/replace https://github.com/fwartner/replace/releases/download/REPLACE_VERSION/gr-64-linux \
 && chmod +x /usr/local/bin/replace
 ```
-
 
 ## Docker images
 
